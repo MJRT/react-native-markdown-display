@@ -1,3 +1,12 @@
+# [14.1.0](https://github.com/mjrt/react-native-markdown-display/compare/v1.0.0...v14.1.0) (2025-07-09)
+
+
+### Features
+
+* Align package version with markdown-it v14.1.0 ([75ef746](https://github.com/mjrt/react-native-markdown-display/commit/75ef746bc25929f620f0d3094b9b36f72cc45415))
+* Add blockTokens prop to customize block-level elements ([ee6328e](https://github.com/mjrt/react-native-markdown-display/commit/ee6328e5536ee0ed99818364e1e753243ed12a48))
+
+
 # 1.0.0 (2025-07-09)
 
 

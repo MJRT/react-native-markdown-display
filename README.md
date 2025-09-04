@@ -1,10 +1,20 @@
-## Upgrades `markdown-it` to the latest (v14.1.0) to ensure compatibility across the markdown-it plugin ecosystem and to align this package’s major version with markdown-it.
+## Upgrades `markdown-it` to the latest (v14.1.0) to ensure compatibility across the markdown-it plugin ecosystem and to align this package's version with markdown-it.
 
 ---
 
 # React Native Markdown Display [![npm version](https://badge.fury.io/js/@mjrt%2Freact-native-markdown-display.svg)](https://badge.fury.io/js/@mjrt%2Freact-native-markdown-display) [![Known Vulnerabilities](https://snyk.io/test/github/iamacup/react-native-markdown-display/badge.svg)](https://snyk.io/test/github/iamacup/react-native-markdown-display)
 
 It a 100% compatible CommonMark renderer, a react-native markdown renderer done right. This is __not__ a web-view markdown renderer but a renderer that uses native components for all its elements. These components can be overwritten and styled as needed.
+
+### Block Tokens
+
+By default, `image` and `hardbreak` tokens are treated as block elements. You can specify additional token types to be treated as block elements using the `blockTokens` prop:
+
+```jsx
+<Markdown blockTokens={['code_block', 'fence']}>
+  {markdownContent}
+</Markdown>
+```
 
 ### Compatibility with react-native-markdown-renderer
 
