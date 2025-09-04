@@ -33,7 +33,7 @@ export function cleanupTokens(tokens, blockTokens = []) {
    */
   const stack = [];
   tokens = tokens.reduce((acc, token, index) => {
-    if (token.type === 'link' && token.nesting === 1) {
+    if (token.type === 'link' && token.nesting === 1 && !token.block) {
       stack.push(token);
     } else if (
       stack.length > 0 &&
