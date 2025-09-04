@@ -1,3 +1,15 @@
+# [14.1.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.0.0...v14.1.0) (2025-09-04)
+
+
+### Bug Fixes
+
+* lint fix ([ad11b5c](https://github.com/mjrt/react-native-markdown-display/commit/ad11b5c8bba6d5dd11d060ccb2cb04dfd19dcbc3))
+
+
+### Features
+
+* add blockTokens params ([4bba6ba](https://github.com/mjrt/react-native-markdown-display/commit/4bba6ba9673e6ae240fb4c8f82c6ba6c8c1b049d))
+
 # [14.1.0](https://github.com/mjrt/react-native-markdown-display/compare/v1.0.0...v14.1.0) (2025-07-09)
 
 
