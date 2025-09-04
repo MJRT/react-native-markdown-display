@@ -1,3 +1,10 @@
+## [14.1.1](https://github.com/mjrt/react-native-markdown-display/compare/v14.1.0...v14.1.1) (2025-09-04)
+
+
+### Bug Fixes
+
+* avoid singel link be coverter to blocklink ([0354158](https://github.com/mjrt/react-native-markdown-display/commit/0354158380c5bc10f4a2f4fdf2f49fc3629af6ab))
+
 # [14.1.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.0.0...v14.1.0) (2025-09-04)
 
 
