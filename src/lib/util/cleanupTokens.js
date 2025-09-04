@@ -12,7 +12,10 @@ export function cleanupTokens(tokens, blockTokens = []) {
 
     // Always set image and hardbreak to block elements (default behavior)
     // Also set any additional tokens specified by the user
-    if (DEFAULT_BLOCK_TOKENS.includes(token.type) || blockTokens.includes(token.type)) {
+    if (
+      DEFAULT_BLOCK_TOKENS.includes(token.type) ||
+      blockTokens.includes(token.type)
+    ) {
       token.block = true;
     }
 

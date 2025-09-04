@@ -188,7 +188,12 @@ const Markdown = React.memo(
 
     const momoizedParser = useMemo(() => markdownit, [markdownit]);
 
-    return parser(children, momoizedRenderer.render, momoizedParser, blockTokens);
+    return parser(
+      children,
+      momoizedRenderer.render,
+      momoizedParser,
+      blockTokens,
+    );
   },
 );
 
