@@ -2,13 +2,17 @@ import getTokenTypeByToken from './getTokenTypeByToken';
 import flattenInlineTokens from './flattenInlineTokens';
 import renderInlineAsText from './renderInlineAsText';
 
-export function cleanupTokens(tokens) {
+// Default block tokens that should always be treated as block elements
+const DEFAULT_BLOCK_TOKENS = ['image', 'hardbreak'];
+
+export function cleanupTokens(tokens, blockTokens = []) {
   tokens = flattenInlineTokens(tokens);
   tokens.forEach((token) => {
     token.type = getTokenTypeByToken(token);
 
-    // set image and hardbreak to block elements
-    if (token.type === 'image' || token.type === 'hardbreak') {
+    // Always set image and hardbreak to block elements (default behavior)
+    // Also set any additional tokens specified by the user
+    if (DEFAULT_BLOCK_TOKENS.includes(token.type) || blockTokens.includes(token.type)) {
       token.block = true;
     }
 

@@ -96,6 +96,11 @@ export interface MarkdownProps {
   mergeStyle?: boolean;
   debugPrintTree?: boolean;
   onLinkPress?: (url: string) => boolean;
+  /**
+   * Additional token types to be treated as block elements.
+   * Note: 'image' and 'hardbreak' are always treated as block elements by default.
+   */
+  blockTokens?: string[];
   children: string;
 }
 

@@ -153,6 +153,7 @@ const Markdown = React.memo(
     ],
     defaultImageHandler = 'https://',
     debugPrintTree = false,
+    blockTokens = [],
   }) => {
     const momoizedRenderer = useMemo(
       () =>
@@ -181,12 +182,13 @@ const Markdown = React.memo(
         allowedImageHandlers,
         defaultImageHandler,
         debugPrintTree,
+        blockTokens,
       ],
     );
 
     const momoizedParser = useMemo(() => markdownit, [markdownit]);
 
-    return parser(children, momoizedRenderer.render, momoizedParser);
+    return parser(children, momoizedRenderer.render, momoizedParser, blockTokens);
   },
 );
 
@@ -233,6 +235,7 @@ Markdown.propTypes = {
   allowedImageHandlers: PropTypes.arrayOf(PropTypes.string),
   defaultImageHandler: PropTypes.string,
   debugPrintTree: PropTypes.bool,
+  blockTokens: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Markdown;
