@@ -59,6 +59,7 @@ export interface ASTNode {
   key: string;
   content: string;
   markup: string;
+  map: [number, number] | null;
   tokenIndex: number;
   index: number;
   attributes: Record<string, any>;

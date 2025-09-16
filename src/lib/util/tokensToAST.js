@@ -3,9 +3,9 @@ import getTokenTypeByToken from './getTokenTypeByToken';
 
 /**
  *
- * @param {{type: string, tag:string, content: string, children: *, attrs: Array, meta, info, block: boolean}} token
+ * @param {{type: string, tag:string, content: string, children: *, attrs: Array, meta, info, block: boolean, map: [number, number] | null}} token
  * @param {number} tokenIndex
- * @return {{type: string, content, tokenIndex: *, index: number, attributes: {}, children: *}}
+ * @return {{type: string, content, tokenIndex: *, index: number, attributes: {}, children: *, map: [number, number] | null}}
  */
 function createNode(token, tokenIndex) {
   const type = getTokenTypeByToken(token);
@@ -27,6 +27,7 @@ function createNode(token, tokenIndex) {
     sourceMeta: token.meta,
     block: token.block,
     markup: token.markup,
+    map: token.map,
     key: getUniqueID() + '_' + type,
     content,
     tokenIndex,
@@ -38,7 +39,7 @@ function createNode(token, tokenIndex) {
 
 /**
  *
- * @param {Array<{type: string, tag:string, content: string, children: *, attrs: Array}>}tokens
+ * @param {Array<{type: string, tag:string, content: string, children: *, attrs: Array, map: [number, number] | null}>}tokens
  * @return {Array}
  */
 export default function tokensToAST(tokens) {
