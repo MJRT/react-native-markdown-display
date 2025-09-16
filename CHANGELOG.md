@@ -1,3 +1,10 @@
+# [14.2.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.1.1...v14.2.0) (2025-09-16)
+
+
+### Features
+
+* add token.map to ASTNode.map ([90b6b22](https://github.com/mjrt/react-native-markdown-display/commit/90b6b22483893ffb5ccb79d8e3e7acd8c52bc45f))
+
 ## [14.1.1](https://github.com/mjrt/react-native-markdown-display/compare/v14.1.0...v14.1.1) (2025-09-04)
 
 
