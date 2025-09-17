@@ -108,7 +108,7 @@ export interface MarkdownProps {
    * Note: 'image' and 'hardbreak' are always treated as block elements by default.
    */
   blockTokens?: string[];
-  children: string;
+  children: string | ASTNode[];
 }
 
 type MarkdownStatic = ComponentType<MarkdownProps>;
