@@ -1,3 +1,10 @@
+## [14.3.1](https://github.com/mjrt/react-native-markdown-display/compare/v14.3.0...v14.3.1) (2025-09-17)
+
+
+### Bug Fixes
+
+* MarkdownProps can accept astnode[] as children ([40a5200](https://github.com/mjrt/react-native-markdown-display/commit/40a52007a38e48df81f195f0328406c553840990))
+
 # [14.3.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.2.0...v14.3.0) (2025-09-17)
 
 
