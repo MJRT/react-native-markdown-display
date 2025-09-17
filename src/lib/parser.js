@@ -1,3 +1,4 @@
+import {stringToAST} from './util/stringToAST';
 import tokensToAST from './util/tokensToAST';
 import {stringToTokens} from './util/stringToTokens';
 import {cleanupTokens} from './util/cleanupTokens';
@@ -17,12 +18,7 @@ export default function parser(source, renderer, markdownIt, blockTokens) {
     return renderer(source);
   }
 
-  let tokens = stringToTokens(source, markdownIt);
-  tokens = cleanupTokens(tokens, blockTokens);
-  tokens = groupTextTokens(tokens);
-  tokens = omitListItemParagraph(tokens);
-
-  const astTree = tokensToAST(tokens);
+  const astTree = stringToAST(source, markdownIt, blockTokens);
 
   return renderer(astTree);
 }

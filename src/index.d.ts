@@ -89,6 +89,12 @@ export function stringToTokens(
 
 export function tokensToAST(tokens: ReadonlyArray<Token>): ASTNode[];
 
+export function stringToAST(
+  source: string,
+  markdownIt: MarkdownParser,
+  blockTokens?: string[],
+): ASTNode[];
+
 export interface MarkdownProps {
   rules?: RenderRules;
   style?: StyleSheet.NamedStyles<any>;

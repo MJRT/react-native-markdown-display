@@ -16,6 +16,7 @@ import AstRenderer from './lib/AstRenderer';
 import MarkdownIt from 'markdown-it';
 import removeTextStyleProps from './lib/util/removeTextStyleProps';
 import {styles} from './lib/styles';
+import {stringToAST} from './lib/util/stringToAST';
 import {stringToTokens} from './lib/util/stringToTokens';
 import FitImage from 'react-native-fit-image';
 import textStyleProps from './lib/data/textStyleProps';
@@ -28,6 +29,7 @@ export {
   AstRenderer,
   parser,
   stringToTokens,
+  stringToAST,
   tokensToAST,
   MarkdownIt,
   styles,
