@@ -1,3 +1,10 @@
+# [14.3.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.2.0...v14.3.0) (2025-09-17)
+
+
+### Features
+
+* pick up stringToAST ([915fe08](https://github.com/mjrt/react-native-markdown-display/commit/915fe08e4068a0081c22181f7d9ca00590720538))
+
 # [14.2.0](https://github.com/mjrt/react-native-markdown-display/compare/v14.1.1...v14.2.0) (2025-09-16)
 
 
